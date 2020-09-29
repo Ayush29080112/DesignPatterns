@@ -3,9 +3,9 @@ public class TestObserver {
 	
 	public static void main(String[] args) {
 		Subject temp = new Subject();
-		Observer observer = new Observer("Ayush");
-		Observer observer2 = new Observer("Vinay");
-		Observer observer3 = new Observer("Archana");
+		Observer observer = new Observer("A");
+		Observer observer2 = new Observer("V");
+		Observer observer3 = new Observer("Ar");
 		
 		temp.register(observer);
 		temp.register(observer2);
