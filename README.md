@@ -10,5 +10,5 @@
 
 	The benefit with 4.b is that lest say Subject has 10 fields/states to hold and different observers looks for lets say 2-3 different states only states then, in case we are pushing then we are supplying non required field as well, which can be avoided if Observer pulls only the required fields
 
-	### Best practice that on should try and follow
-		Codind to an interface or Abstraction rather than coding on implementation as this helps us with minimum places where the change will be required in case any change need to be done for new IMplementation of subject and observers
+	### Best practice that one should try and follow
+		Coding to an interface or Abstraction rather than coding on implementation as this helps us with minimum places where the change will be required in case any change need to be done for new IMplementation of subject and observers
