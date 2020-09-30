@@ -12,3 +12,7 @@
 
 	### Best practice that on should try and follow
 		Codind to an interface or Abstraction rather than coding on implementation as this helps us with minimum places where the change will be required in case any change need to be done for new IMplementation of subject and observers
+
+## Singleton Pattern
+	1) Singleton pattern ensures that we have only one instance of an object
+	2) To achive this we need to make constructor private and we create a static method which is used to create/get the instance of the object.
