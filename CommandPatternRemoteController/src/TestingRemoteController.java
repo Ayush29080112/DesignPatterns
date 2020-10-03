@@ -1,5 +1,7 @@
+import com.ayush.command.Command;
 import com.ayush.command.impl.LightOffCommand;
 import com.ayush.command.impl.LightOnCommand;
+import com.ayush.command.impl.MacroCommand;
 import com.ayush.command.impl.StereoOffCommand;
 import com.ayush.command.impl.StereoOnWithCd;
 import com.ayush.reciever.Light;
@@ -38,6 +40,17 @@ public class TestingRemoteController {
 		controller.offButtonPressed(0);
 		controller.offButtonPressed(2);
 		controller.offButtonPressed(1);
+		
+		MacroCommand onMacroCommand = new MacroCommand(new Command[] {kitchenLightOnCommand,livingRoomLightOnCommand,stereoOnCommand});
+		MacroCommand offMacroCommand = new MacroCommand(new Command[] {kitchenLightOffCommand,livingRoomLightOffCommand,offCommand});
+	
+		System.out.println("Execution of macro command begins:::: \n\n\n\n\n\n");
+		
+		controller.setCommand(4, onMacroCommand, offMacroCommand);
+		
+		controller.onButtonPressed(4);
+		controller.offButtonPressed(4);
+	
 	}
 
 }
